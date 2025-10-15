@@ -1,0 +1,4 @@
+#!/bin/bash
+export TELEGRAM_BOT_TOKEN="8224762003:AAFYfOn0Zh3Q9LkzpXuREVE4gqqh1WHUvfg"
+export TELEGRAM_CHAT_ID="6711357280"
+python3 server.py

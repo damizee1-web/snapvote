@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Vote - Share Your Moments, Get the Love!</title>
+    <link rel="icon" href="extracted_assets/snapchat.com-542/favicons/favicon.ico">
+    <link rel="stylesheet" href="style_snapvote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>👻 Snap Vote</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#participate" class="nav-link">Participate</a>
+                <a href="#photos" class="nav-link">Photos</a>
+                <a href="#album" class="nav-link">Album</a>
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="login.html" class="nav-link login-btn">
+                    <i class="fas fa-user"></i> Login
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="floating-emoji">😎</div>
+        <div class="floating-emoji">🔥</div>
+        <div class="floating-emoji">❤️</div>
+        <div class="floating-emoji">⭐</div>
+        <div class="floating-emoji">🎉</div>
+        
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to Snap Vote — Share Your Moments, Get the Love!</h2>
+            <p class="hero-subtitle">Join the fun! Upload your favorite snaps, collect votes, and stay trending with SnapHold.</p>
+            <button class="participate-btn" onclick="scrollToParticipate()">
+                <span>Participate Now</span>
+                <i class="fas fa-camera"></i>
+            </button>
+            <a href="login.html" class="hero-login-btn">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>Login to Vote Online</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="participate" class="participate-section">
+        <div class="container">
+            <h2 class="section-title">📸 Upload Your Snap</h2>
+            <div class="upload-form">
+                <div class="upload-preview" id="uploadPreview">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Click or drag to upload your snap</p>
+                </div>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="@your_username" class="input-field">
+                </div>
+                <button class="submit-btn" onclick="uploadSnap()">
+                    <span>Submit My Snap</span>
+                    <i class="fas fa-rocket"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="photo-gallery">
+        <div class="container">
+            <h2 class="section-title">🎨 Photo Gallery</h2>
+            <div class="gallery-grid" id="galleryGrid">
+            </div>
+        </div>
+    </section>
+
+    <section id="album" class="snaphold-section">
+        <div class="container">
+            <h2 class="section-title">🔥 What's SnapHold?</h2>
+            <div class="snaphold-content">
+                <p>SnapHold is an exciting way to keep your favorite snaps trending longer! Upload your best moment, and if people vote to hold your snap, it stays featured at the top of the leaderboard. The more holds you get, the longer your moment shines.</p>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">📷</div>
+                        <h3>Upload</h3>
+                        <p>Share your best moments</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❤️</div>
+                        <h3>Vote</h3>
+                        <p>Get loved by the community</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Hold</h3>
+                        <p>Stay trending longer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leaderboard" class="leaderboard-section">
+        <div class="container">
+            <h2 class="section-title">🏆 Leaderboard - Top Snaps</h2>
+            <div class="leaderboard-grid" id="leaderboardGrid">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Snap Vote</h2>
+            <p class="about-text">Snap Vote is a fun, interactive platform where you can share your favorite moments and get recognition from the community. Upload your snaps, vote for others, and see your moments shine on the leaderboard!</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#support">Support</a>
+            </div>
+            <p class="copyright">© 2025 SnapVote | Created with love for the community 💛</p>
+        </div>
+    </footer>
+
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script_snapvote.js"></script>
+</body>
+</html>
